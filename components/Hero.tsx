@@ -209,42 +209,7 @@ const Hero: FC<Props> = ({ fallback, collectionId }) => {
             refreshCollection={refreshCollection}
           />
           <HeroStats stats={statsObj} />
-          {header.description && (
-            <>
-              <div
-                className="relative overflow-hidden transition-[max-height] ease-in-out md:w-[423px]"
-                style={{ maxHeight: descriptionHeight }}
-              >
-                <p
-                  ref={descriptionRef}
-                  className="text-center text-sm text-[#262626] transition-[width] duration-300 ease-in-out dark:text-white"
-                >
-                  <ReactMarkdown
-                    className="markdown-support"
-                    linkTarget="_blank"
-                  >
-                    {header.description}
-                  </ReactMarkdown>
-                </p>
-              </div>
-              {isLongDescription && (
-                <a
-                  className="mt-[-18px]"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    setDescriptionExpanded(!descriptionExpanded)
-                  }}
-                >
-                  <FiChevronDown
-                    className={`h-5 w-5 text-black transition-transform dark:text-white ${
-                      descriptionExpanded ? 'rotate-180' : ''
-                    }`}
-                    aria-hidden
-                  />
-                </a>
-              )}
-            </>
-          )}
+
           <div className="flex w-full flex-col justify-center gap-4 md:flex-row">
             {isSupported && (
               <BidModal
@@ -285,30 +250,6 @@ const Hero: FC<Props> = ({ fallback, collectionId }) => {
                   })
                 }}
               />
-            )}
-            {!isSmallDevice && (
-              <div className="">
-                <DropdownMenu.Root>
-                  <DropdownMenu.Trigger className="btn-primary-outline rounded-lg border border-[#D4D4D4] bg-white p-2 dark:border-[#525252] dark:bg-black dark:ring-[#525252] dark:focus:ring-4">
-                    <FiMoreVertical className="h-6 w-6 dark:text-[#D4D4D4]" />
-                  </DropdownMenu.Trigger>
-                  <DropdownMenu.Content
-                    sideOffset={4}
-                    align="start"
-                    className="min-w-[172px] overflow-hidden rounded-lg border bg-white shadow-md radix-side-bottom:animate-slide-down dark:border-[#525252] dark:bg-neutral-900 md:max-w-[422px]"
-                  >
-                    <DropdownMenu.Item asChild>
-                      <button
-                        className={dropdownItemClasses}
-                        onClick={() => refreshCollection(collectionId)}
-                      >
-                        <FiRefreshCcw className="h-4 w-4" />
-                        Refresh Metadata
-                      </button>
-                    </DropdownMenu.Item>
-                  </DropdownMenu.Content>
-                </DropdownMenu.Root>
-              </div>
             )}
             {isSmallDevice && (
               <Sweep

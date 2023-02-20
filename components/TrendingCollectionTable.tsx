@@ -44,8 +44,8 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
     : []
 
   const columns = isSmallDevice
-    ? ['Collection', 'Floor Price']
-    : ['Collection', 'Volume', 'Floor Price', 'Supply']
+    ? ['Collections', '', 'Current Floor Price']
+    : ['Collections', '', 'Current Floor Price']
 
   return (
     <div className="mb-11 overflow-x-auto overflow-y-hidden">
@@ -56,7 +56,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
               <th
                 key={item}
                 scope="col"
-                className="reservoir-subtitle px-6 py-3 text-left dark:text-white"
+                className="h1 px-6 py-3 text-left dark:text-white"
               >
                 {item}
               </th>
@@ -80,7 +80,6 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
               floorSaleChange7Days,
               floorSaleChange30Days,
               floorPrice,
-              supply,
             } = processCollection(collection)
 
             if (FOOTER_ENABLED && !expanded && index > 9) {
@@ -98,7 +97,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
                   (FOOTER_ENABLED && !expanded && index == 9)
                     ? ''
                     : 'border-b'
-                } group h-[88px] border-neutral-300 dark:border-neutral-600 dark:text-white`}
+                } group h-[88px] border-neutral-300 even:bg-hunnysviolet odd:bg-hunnysdarkpurple dark:border-neutral-600 dark:text-white`}
               >
                 {/* COLLECTION */}
                 <td className="reservoir-body flex items-center gap-4 whitespace-nowrap px-6 py-4 dark:text-white">
@@ -122,50 +121,24 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
                   </Link>
                 </td>
 
-                {/* VOLUME */}
-                {!isSmallDevice && (
-                  <td className="reservoir-body whitespace-nowrap px-6 py-4 dark:text-white">
-                    <FormatNativeCrypto
-                      amount={
-                        sort === '7DayVolume'
-                          ? days7
-                          : sort === '30DayVolume'
-                          ? days30
-                          : days1
-                      }
-                    />
-                    <PercentageChange
-                      value={
-                        sort === '7DayVolume'
-                          ? days7Change
-                          : sort === '30DayVolume'
-                          ? days30Change
-                          : days1Change
-                      }
-                    />
-                  </td>
-                )}
-
+                {/* SHOP BUTTON */}
+                <td className="reservoir-body whitespace-nowrap px-6 py-4 dark:text-white">
+                <Link href={tokenHref} legacyBehavior={true}>
+                  <a className="transition vc-button duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton text-hunnysdarkpurple hover:bg-hunnysyellow text-white font-bold py-2 px-4">
+                      VIEW COLLECTION
+                  </a>
+                </Link>
+                <div
+                  className={`hidden ${
+                    isSmallDevice ? 'max-w-[1240px]' : ''
+                  }`}
+                >
+                </div>
+                </td>
                 {/* FLOOR PRICE */}
                 <td className="reservoir-body whitespace-nowrap px-6 py-4 dark:text-white">
                   <FormatNativeCrypto amount={floorPrice} />
-                  <PercentageChange
-                    value={
-                      sort === '7DayVolume'
-                        ? floorSaleChange7Days
-                        : sort === '30DayVolume'
-                        ? floorSaleChange30Days
-                        : floorSaleChange1Days
-                    }
-                  />
                 </td>
-
-                {/* SUPPLY */}
-                {!isSmallDevice && (
-                  <td className="reservoir-body whitespace-nowrap px-6 py-4 dark:text-white">
-                    {supply ? formatNumber(+supply) : '-'}
-                  </td>
-                )}
               </tr>
             )
           })}
@@ -176,16 +149,6 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
         <CgSpinner className="mx-auto h-6 w-6 animate-spin" />
       )}
 
-      {FOOTER_ENABLED && !expanded && (
-        <button
-          className="btn-primary-outline mx-auto my-3 border border-[#D4D4D4] bg-white text-black dark:border-[#525252] dark:bg-black dark:text-white dark:ring-[#525252] dark:focus:ring-4"
-          onClick={() => {
-            setExpanded(true)
-          }}
-        >
-          Load More
-        </button>
-      )}
     </div>
   )
 }

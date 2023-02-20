@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Jazzicon, { jsNumberForAddress } from 'react-jazzicon'
+import hunnysAvatar from '/public/246.png'
 
 type Props = {
   address: string | undefined

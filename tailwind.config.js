@@ -1,9 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-const FONT_FAMILY = process.env.NEXT_PUBLIC_FONT_FAMILY || 'Inter'
-const BODY_FONT_FAMILY = process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'Inter'
-const MONO_FONT_FAMILY =
-  process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'ui-monospace'
+
 const PRIMARY_COLOR = process.env.NEXT_PUBLIC_PRIMARY_COLOR || 'default'
 
 const primaryColors = require('./colors')
@@ -25,11 +22,6 @@ module.exports = {
         '3xl': '1920px',
         '4xl': '2560px',
       },
-      fontFamily: {
-        sans: [`"${BODY_FONT_FAMILY}"`, ...defaultTheme.fontFamily.sans],
-        headings: [`"${FONT_FAMILY}"`, ...defaultTheme.fontFamily.sans],
-        mono: [`"${MONO_FONT_FAMILY}"`, ...defaultTheme.fontFamily.mono],
-      },
       keyframes: {
         'slide-down': {
           '0%': { opacity: 0, transform: 'translateY(-10px)' },
@@ -44,8 +36,14 @@ module.exports = {
 
       colors: {
         primary: primaryColors[PRIMARY_COLOR],
-        'dark-backdrop': 'rgba(0, 0, 0, 0.8)',
-        backdrop: 'rgba(255, 255, 255, 0.8)',
+        'dark-backdrop': '#000000',
+        backdrop: 'grey',
+        hunnysdarkpurple: '#3F07B4',
+        hunnyslightpurple: '#5A1CDA',
+        hunnyswhite: '#FFFFFF',
+        hunnysviolet: '#5642D2',
+        hunnysyellow: '#fcca00',
+        hunnysbutton: '#ffde59',
       },
     },
   },

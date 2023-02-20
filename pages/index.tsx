@@ -4,11 +4,11 @@ import { paths } from '@reservoir0x/reservoir-sdk'
 import setParams from 'lib/params'
 import Head from 'next/head'
 import TrendingCollectionTable from 'components/TrendingCollectionTable'
-import SortTrendingCollections from 'components/SortTrendingCollections'
 import Footer from 'components/Footer'
 import { useMediaQuery } from '@react-hookz/web'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import hunnysHeader from 'public/hunnysHeaderBG.png'
 
 // Environment variables
 // For more information about these variables
@@ -37,7 +37,7 @@ const metadata = {
     <meta name="description" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'Discover, buy and sell NFTs'}</>
+    <>{tagline || 'Shop the Bunny Kingdom'}</>
   ),
   image: (image?: string) => {
     if (image) {
@@ -83,15 +83,19 @@ const Home: NextPage<Props> = ({ fallback }) => {
         {description}
         {image}
       </Head>
-      <header className="col-span-full mb-12 mt-[66px] px-4 md:mt-40 lg:px-0">
-        <h1 className="reservoir-h1 text-center dark:text-white">{tagline}</h1>
+      <header className="col-span-full bg-hunnyslightpurple">
+      <img
+        className={`h-auto m-auto w-full`}
+        alt={`Logo`}
+        src={"hunnysHeaderBG.png"}
+      />
+        <h1 className="reservoir-h1 text-center mt-24 mb-8 dark:text-white">{tagline}</h1>
       </header>
-      <div className="col-span-full px-6 md:px-16">
-        <div className="mb-9 flex w-full items-center justify-between">
+      <div className="col-span-full px-6 md:px-16 bg-hunnyslightpurple">
+        <div className="mb-9 flex w-full items-center justify-between bg-hunnyslightpurple">
           <div className="reservoir-h4 dark:text-white">
-            Trending Collections
+
           </div>
-          {!isSmallDevice && <SortTrendingCollections />}
         </div>
         <TrendingCollectionTable fallback={fallback} />
       </div>
