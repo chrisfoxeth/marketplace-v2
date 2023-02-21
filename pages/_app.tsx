@@ -2,6 +2,7 @@ import 'styles/globals.css'
 import 'styles/inter.css'
 import 'styles/druk.css'
 import 'styles/montserrat.css'
+import 'styles/luckiestguy.css'
 import 'styles/open-sans.css'
 import 'styles/playfair-display.css'
 import 'styles/roboto.css'
@@ -55,8 +56,8 @@ const THEME_SWITCHING_ENABLED = process.env.NEXT_PUBLIC_THEME_SWITCHING_ENABLED
 const DARK_MODE_ENABLED = process.env.NEXT_PUBLIC_DARK_MODE
 const PROXY_API_BASE = process.env.NEXT_PUBLIC_PROXY_API_BASE
 const RESERVOIR_API_KEY = process.env.NEXT_PUBLIC_RESERVOIR_API_KEY
-const BODY_FONT_FAMILY = process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'Inter'
-const FONT_FAMILY = process.env.NEXT_PUBLIC_FONT_FAMILY || 'Inter'
+const BODY_FONT_FAMILY = process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'LuckiestGuy'
+const FONT_FAMILY = process.env.NEXT_PUBLIC_FONT_FAMILY || 'LuckiestGuy'
 const PRIMARY_COLOR = process.env.NEXT_PUBLIC_PRIMARY_COLOR || 'default'
 const DISABLE_POWERED_BY_RESERVOIR =
   process.env.NEXT_PUBLIC_DISABLE_POWERED_BY_RESERVOIR

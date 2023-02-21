@@ -1,6 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-
+const FONT_FAMILY = process.env.NEXT_PUBLIC_FONT_FAMILY || 'LuckiestGuy'
 const PRIMARY_COLOR = process.env.NEXT_PUBLIC_PRIMARY_COLOR || 'default'
 
 const primaryColors = require('./colors')
@@ -26,6 +26,9 @@ module.exports = {
         '2xl': '1536px',
         '3xl': '1920px',
         '4xl': '2560px',
+      },
+      fontFamily: {
+        headings: [`"${FONT_FAMILY}"`, ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'slide-down': {
