@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url('/fonts/luckiestguy/LuckiestGuy.ttf');
 
 
 h1, h4, .vc-button {
