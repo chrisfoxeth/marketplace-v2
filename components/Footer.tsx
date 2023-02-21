@@ -20,7 +20,7 @@ const Footer = () => {
           </Link>
           <Link href="https://hunnys.io/shopselect/" legacyBehavior={true}>
             <a className="min-w-max" target="_blank" rel="noreferrer">
-              Shop
+              Merch
             </a>
           </Link>
         </div>

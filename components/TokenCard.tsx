@@ -298,7 +298,7 @@ const TokenCard: FC<Props> = ({
                       }
                     }
                   }}
-                  className="reservoir-subtitle flex h-[40px] items-center justify-center border-t border-neutral-300 disabled:cursor-not-allowed dark:border-neutral-600"
+                  className="reservoir-subtitle flex h-[40px] bg-hunnysviolet text-white items-center justify-center border-t border-neutral-300 disabled:cursor-not-allowed dark:border-neutral-600"
                 >
                   Add to Cart
                 </button>
