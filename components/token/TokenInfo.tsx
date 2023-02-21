@@ -72,12 +72,12 @@ const TokenInfo: FC<Props> = ({ token }) => {
   return (
     <article className="col-span-full rounded-2xl border border-gray-300 bg-white p-6 dark:border-neutral-600 dark:bg-black">
       <div className="mb-4 flex items-center justify-between">
-        <div className="reservoir-h5 font-headings dark:text-white">
+        <div className="reservoir-h5 font-thin font-headings dark:text-white">
           Token Info
         </div>
         <div className="flex items-center gap-2">
           <a
-            className="reservoir-h6 font-headings"
+            className="reservoir-6 font-thin font-headings"
             target="_blank"
             rel="noopener noreferrer"
             href={`https://looksrare.org/collections/${token?.contract}/${token?.tokenId}`}
@@ -89,7 +89,7 @@ const TokenInfo: FC<Props> = ({ token }) => {
             />
           </a>
           <a
-            className="reservoir-h6 font-headings"
+            className="reservoir-6 font-thin font-headings"
             target="_blank"
             rel="noopener noreferrer"
             href={`https://opensea.io/assets/${token?.contract}/${token?.tokenId}`}
@@ -109,7 +109,7 @@ const TokenInfo: FC<Props> = ({ token }) => {
           </div>
           <div>
             <a
-              className="reservoir-h6 flex items-center gap-2 font-headings text-primary-700 dark:text-primary-100"
+              className="reservoir-6 font-thin flex items-center gap-2 font-headings text-primary-700 dark:text-primary-100"
               target="_blank"
               rel="noopener noreferrer"
               href={`${blockExplorerBaseUrl}/token/${token?.contract}?a=${token?.tokenId}`}
@@ -122,13 +122,13 @@ const TokenInfo: FC<Props> = ({ token }) => {
       )}
       <div className="mb-4 flex items-center justify-between">
         <div className="reservoir-subtitle dark:text-white">Token ID</div>
-        <div className="reservoir-h6 max-w-[80px] truncate font-headings dark:text-white">
+        <div className="reservoir-6 font-thin max-w-[80px] truncate font-headings dark:text-white">
           {token?.tokenId}
         </div>
       </div>
       <div className="mb-4 flex items-center justify-between">
         <div className="reservoir-subtitle dark:text-white">Token Standard</div>
-        <div className="reservoir-h6 font-headings uppercase dark:text-white">
+        <div className="reservoir-6 font-thin font-headings uppercase dark:text-white">
           {token?.kind}
         </div>
       </div>
@@ -137,7 +137,7 @@ const TokenInfo: FC<Props> = ({ token }) => {
           Metadata Refresh
         </div>
         <button
-          className="btn-primary-outline reservoir-h6 ml-auto flex items-center gap-2 p-2 font-headings text-primary-700 dark:border-neutral-600 dark:text-primary-100 dark:ring-primary-900 dark:focus:ring-4"
+          className="btn-primary-outline reservoir-6 font-thin ml-auto flex items-center gap-2 p-2 font-headings text-primary-700 dark:border-neutral-600 dark:text-primary-100 dark:ring-primary-900 dark:focus:ring-4"
           title="Refresh token"
           disabled={refreshLoading}
           onClick={() => refreshToken(`${token?.contract}:${token?.tokenId}`)}

@@ -46,7 +46,7 @@ const CollectionActivityTab: FC<Props> = ({ collectionId }) => {
             className="h-[59px]"
             alt="Magnifying Glass"
           />
-          <div className="reservoir-h6 mt-4 mb-2 text-center dark:text-white">
+          <div className="reservoir-h6 font-thin mt-4 mb-2 text-center dark:text-white">
             No activity yet
           </div>
           <div className="text-center text-xs font-light dark:text-white">

@@ -338,7 +338,7 @@ const ActivityTableRow: FC<ActivityTableRowProps> = ({ activity }) => {
                   height={48}
                 />
                 <div className="ml-2 grid truncate">
-                  <div className="reservoir-h6 dark:text-white">
+                  <div className="reservoir-h6 font-thin dark:text-white">
                     {activity.token?.tokenName ||
                       activity.token?.tokenId ||
                       activity.collection?.collectionName}
@@ -446,7 +446,7 @@ const ActivityTableRow: FC<ActivityTableRowProps> = ({ activity }) => {
               height={48}
             />
             <div className="ml-2 grid truncate">
-              <div className="reservoir-h6 dark:text-white">
+              <div className="reservoir-h6 font-thin dark:text-white">
                 {activity.token?.tokenName ||
                   activity.token?.tokenId ||
                   activity.collection?.collectionName}

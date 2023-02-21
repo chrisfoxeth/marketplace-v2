@@ -6,7 +6,7 @@
 @import url('/fonts/luckiestguy/LuckiestGuy.ttf');
 
 
-h1, h4, .vc-button {
+h1, h2, h3, h4, h5, h6, reservoir-h1, reservoir-h2, reservoir-h3, reservoir-h4, reservoir-h5, reservoir-h6 font-thin, .vc-button {
   font-family: "LuckiestGuy";
   font-weight: 100 !important;
 }
@@ -26,6 +26,39 @@ model-viewer {
   display: flex;
   margin-left: -30px; /* gutter size offset */
   width: auto;
+}
+
+.checkoutbutton {
+  font-family: "LuckiestGuy";
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.collectionsdropdown {
+  font-family: "LuckiestGuy";
+  font-weight: 100;
+}
+
+.addtocart {
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.buybutton{
+  font-family: "LuckiestGuy";
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.sweepbutton {
+  font-family: "LuckiestGuy";
+  font-weight: 100;
+  font-size: 24px;
+  padding-top:10px;
+}
+
+.btn-primary-fill {
+  color: #3F07B4;
 }
 
 .masonry-grid_column {
@@ -80,20 +113,24 @@ model-viewer {
 }
 
 .vc-button {
-  width: inherit;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 2%;
 }
 
 @media screen and (max-width: 1400px) {
   .tagline {
     font-size: 64px !important;
   }
-
-
 }
 
 @media screen and (max-width: 1036px) {
   .tagline {
     font-size: 48px !important;
+  }
+  .vc-button {
+    font-size: 18px;
+    padding:.5rem;
   }
 }
 

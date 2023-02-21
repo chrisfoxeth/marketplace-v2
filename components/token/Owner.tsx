@@ -56,7 +56,7 @@ const Owner: FC<Props> = ({ details, bannedOnOpenSea, collection }) => {
               </div>
             </div>
           )}
-        <div className="reservoir-h3 mb-3 flex items-center gap-4 overflow-hidden font-headings dark:text-white">
+        <div className="reservoir-h3 font-thin mb-3 flex items-center gap-4 overflow-hidden font-headings dark:text-white">
           <div>{token?.name || `#${token?.tokenId}`}</div>
           {bannedOnOpenSea && (
             <Tooltip.Provider>
@@ -76,7 +76,7 @@ const Owner: FC<Props> = ({ details, bannedOnOpenSea, collection }) => {
           )}
         </div>
 
-        <div className="reservoir-h6 mb-2 font-headings dark:text-white">
+        <div className="reservoir-h6 font-thin font-thin mb-2 font-headings dark:text-white">
           Owner
         </div>
         {owner && (

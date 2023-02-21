@@ -49,7 +49,7 @@ const ModalCard: FC<Props> = ({
             }`}
           >
             <div className="mb-4 flex items-center justify-between">
-              <Dialog.Title className="reservoir-h4 font-headings dark:text-white">
+              <Dialog.Title className="reservoir-h4 font-thin font-headings dark:text-white">
                 {title}
               </Dialog.Title>
               <Dialog.Close

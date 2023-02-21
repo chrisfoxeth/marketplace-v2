@@ -101,7 +101,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
               >
                 {/* COLLECTION */}
                 <td className="reservoir-body flex items-center gap-4 whitespace-nowrap px-6 py-4 dark:text-white">
-                  <div className="reservoir-h6 mr-6 dark:text-white">
+                  <div className="reservoir-h6 font-thin font-thin mr-6 dark:text-white">
                     {index + 1}
                   </div>
                   <Link href={tokenHref} legacyBehavior={true}>
@@ -111,7 +111,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
                         className="h-[56px] w-[56px] rounded-full object-cover"
                       />
                       <div
-                        className={`reservoir-h6 overflow-hidden truncate whitespace-nowrap dark:text-white ${
+                        className={`reservoir-h6 font-thin font-thin overflow-hidden truncate whitespace-nowrap dark:text-white ${
                           isSmallDevice ? 'max-w-[140px]' : ''
                         }`}
                       >

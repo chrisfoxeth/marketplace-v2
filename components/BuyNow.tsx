@@ -22,7 +22,7 @@ const BuyNow: FC<Props> = ({
   data,
   isInTheWrongNetwork,
   signer,
-  buttonClassName = 'btn-primary-fill w-full',
+  buttonClassName = 'btn-primary-fill w-full addtocart',
   mutate,
 }) => {
   const { switchNetworkAsync } = useSwitchNetwork({
@@ -49,7 +49,7 @@ const BuyNow: FC<Props> = ({
       marketData?.floorAsk?.price?.amount != undefined
   }
 
-  const trigger = <button className={buttonClassName}>Buy Now</button>
+  const trigger = <button className="transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton text-hunnysdarkpurple hover:bg-hunnysyellow font-bold w-full buybutton">BUY NOW</button>
 
   if (!forSale) {
     return null
@@ -74,7 +74,7 @@ const BuyNow: FC<Props> = ({
         }
       }}
     >
-      Buy Now
+      BUY
     </button>
   ) : (
     <BuyModal

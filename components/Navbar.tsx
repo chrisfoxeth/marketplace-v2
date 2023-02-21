@@ -129,7 +129,7 @@ const Navbar: FC = () => {
             <a
               key={url}
               href={url}
-              className="text-dark reservoir-h6 hover:text-[#1F2937] dark:text-white"
+              className="text-dark reservoir-h6 font-thin hover:text-[#1F2937] dark:text-white"
             >
               {name}
             </a>

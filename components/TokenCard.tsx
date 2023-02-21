@@ -126,7 +126,7 @@ const TokenCard: FC<Props> = ({
                     width="64"
                     height="64"
                   />
-                  <div className="reservoir-h6 text-white">
+                  <div className="reservoir-h6 font-thin font-thin text-white">
                     No Content Available
                   </div>
                 </div>
@@ -170,7 +170,7 @@ const TokenCard: FC<Props> = ({
           {price?.amount?.decimal != null &&
           price?.amount?.decimal != undefined ? (
             <>
-              <div className="reservoir-h6">
+              <div className="reservoir-h6 font-thin font-thin">
                 <FormatCrypto
                   amount={price?.amount?.decimal}
                   address={price?.currency?.contract}
@@ -205,7 +205,7 @@ const TokenCard: FC<Props> = ({
           <div className="grid">
             <ListModal
               trigger={
-                <button className="btn-primary-fill reservoir-subtitle flex h-[40px] items-center justify-center whitespace-nowrap rounded-none text-white focus:ring-0">
+                <button className="btn-primary-fill gap-2 dark:ring-primary-900 dark:focus:ring-4 sweepbutton transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton hover:bg-hunnysyellow">
                   {price?.amount?.decimal
                     ? 'Create New Listing'
                     : 'List for Sale'}
@@ -298,9 +298,9 @@ const TokenCard: FC<Props> = ({
                       }
                     }
                   }}
-                  className="reservoir-subtitle flex h-[40px] bg-hunnysviolet text-white items-center justify-center border-t border-neutral-300 disabled:cursor-not-allowed dark:border-neutral-600"
+                  className="reservoir-subtitle addtocart flex h-[40px] bg-hunnysviolet text-white items-center justify-center border-t border-neutral-300 disabled:cursor-not-allowed dark:border-neutral-600"
                 >
-                  Add to Cart
+                  ADD TO CART
                 </button>
               )}
             </div>

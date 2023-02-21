@@ -122,7 +122,7 @@ const Address: NextPage<Props> = ({ address, fallback }) => {
               <Avatar address={address} avatar={ensAvatar} size={80} />
             )}
             <div className="ml-4 flex flex-col justify-center">
-              <p className="reservoir-h6 text-xl font-semibold dark:text-white">
+              <p className="reservoir-h6 font-thin font-thin text-xl font-semibold dark:text-white">
                 {ensName || formattedAddress}
               </p>
               {ensName && (

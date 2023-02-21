@@ -125,7 +125,7 @@ const UserOffersTable: FC<Props> = ({ modal, collectionIds }) => {
                       )}
                     </div>
                     <div>
-                      <div className="reservoir-h6 max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap font-headings text-sm dark:text-white">
+                      <div className="reservoir-h6 font-thin font-thin max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap font-headings text-sm dark:text-white">
                         {tokenName ? tokenName : collectionName}
                       </div>
                       {tokenName && (
@@ -268,7 +268,7 @@ const UserOffersTable: FC<Props> = ({ modal, collectionIds }) => {
                         )}
                       </div>
                       <span className="whitespace-nowrap">
-                        <div className="reservoir-h6 max-w-[250px] overflow-hidden text-ellipsis font-headings text-base dark:text-white">
+                        <div className="reservoir-h6 font-thin font-thin max-w-[250px] overflow-hidden text-ellipsis font-headings text-base dark:text-white">
                           {tokenName ? tokenName : collectionName}
                         </div>
                         {tokenName && (

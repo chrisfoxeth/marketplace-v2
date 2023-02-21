@@ -224,7 +224,7 @@ const UserListingsTableRow = ({
               )}
             </div>
             <span className="whitespace-nowrap">
-              <div className="reservoir-h6 max-w-[250px] overflow-hidden text-ellipsis font-headings text-base dark:text-white">
+              <div className="reservoir-h6 font-thin max-w-[250px] overflow-hidden text-ellipsis font-headings text-base dark:text-white">
                 {name}
               </div>
               <div className="text-xs text-neutral-600 dark:text-neutral-300">
@@ -350,7 +350,7 @@ const UserListingsMobileRow = ({
               )}
             </div>
             <div>
-              <div className="reservoir-h6 max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap font-headings text-sm dark:text-white">
+              <div className="reservoir-h6 font-thin max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap font-headings text-sm dark:text-white">
                 {name}
               </div>
               <div className="max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap text-xs text-neutral-600 dark:text-neutral-300">

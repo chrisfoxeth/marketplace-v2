@@ -125,7 +125,7 @@ const CartMenu: FC = () => {
       <Popover.Trigger>
         <div className="relative z-10 grid h-8 w-8 items-center justify-center rounded-full">
           {cartCount > 0 && (
-            <div className="reservoir-subtitle absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-white">
+            <div className="reservoir-h6 absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-hunnysviolet">
               {cartCount}
             </div>
           )}
@@ -137,22 +137,22 @@ const CartMenu: FC = () => {
         className="z-[10000000] w-[367px] rounded-2xl bg-white p-6 shadow-lg dark:border dark:border-neutral-700 dark:bg-neutral-900"
       >
         <div className="mb-4 flex justify-between">
-          <div className="flex items-center">
-            <div className="reservoir-h6 mr-3">My Cart</div>
-            <div className="reservoir-subtitle flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-white">
+          <div className="flex text-white items-center">
+            <div className="h1 text-white mr-3">My Cart</div>
+            <div className="h1 font-bold flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-hunnysviolet">
               {cartCount}
             </div>
           </div>
           {cartCount > 0 && (
             <button
               onClick={() => setCartTokens([])}
-              className="text-primary-700 dark:text-white"
+              className="text-primary-700 text-white dark:text-white"
             >
               Clear
             </button>
           )}
         </div>
-        <div className="mb-6 grid max-h-[300px] gap-2 overflow-auto">
+        <div className="mb-6 grid text-white max-h-[300px] gap-2 overflow-auto">
           {cartTokens.map((tokenData, index) => {
             const { token } = tokenData
             const { collection, contract, name, image, tokenId } = token
@@ -168,11 +168,11 @@ const CartMenu: FC = () => {
                     <img src={image || collection?.image} alt="" />
                   </div>
                   <div>
-                    <div className="reservoir-subtitle">
+                    <div className="reservoir-subtitle text-white">
                       {name || `#${tokenId}`}
                     </div>
-                    <div className="reservoir-label-s">{collection?.name}</div>
-                    <div className="reservoir-h6">
+                    <div className="reservoir-label-s text-white">{collection?.name}</div>
+                    <div className="reservoir-h6 text-white">
                       <FormatCrypto
                         amount={price?.amount?.decimal}
                         address={price?.currency?.contract}
@@ -196,8 +196,8 @@ const CartMenu: FC = () => {
         </div>
 
         <div className="mb-4 flex justify-between">
-          <div className="reservoir-h6">You Pay</div>
-          <div className="reservoir-h6">
+          <div className="reservoir-h6 text-white">You Pay</div>
+          <div className="reservoir-h6 text-white">
             <FormatCrypto
               amount={cartTotal}
               address={cartCurrency?.contract}
@@ -207,7 +207,7 @@ const CartMenu: FC = () => {
         </div>
         {balance?.formatted && +balance.formatted < cartTotal && (
           <div className="mb-2 text-center ">
-            <span className="reservoir-headings text-[#FF6369]">
+            <span className="reservoir-headings text-[#FFFFFF]">
               Insufficient balance{' '}
             </span>
             <FormatCrypto
@@ -224,9 +224,9 @@ const CartMenu: FC = () => {
             waitingTx ||
             Boolean(balance?.formatted && +balance.formatted < cartTotal)
           }
-          className="btn-primary-fill w-full"
+          className="checkoutbutton btn-primary-fill w-full text-hunnyslightpurple"
         >
-          {waitingTx ? 'Waiting' : 'Purchase'}
+          {waitingTx ? 'Waiting' : 'CHECK OUT'}
         </button>
       </StyledContent>
     </Popover.Root>

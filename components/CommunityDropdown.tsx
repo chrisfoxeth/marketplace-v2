@@ -15,7 +15,7 @@ const CommunityDropdown: FC<Props> = ({ collections, defaultCollectionId }) => {
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger className="reservoir-h6 rounded dark:text-white dark:outline-none dark:ring-primary-900 dark:focus:ring-4">
-        Collections
+        All Collections
         <FiChevronDown
           className={`ml-3 inline text-[#525252] transition-transform dark:text-[#D4D4D4] ${
             open ? 'rotate-180' : ''
@@ -64,7 +64,7 @@ const CommunityDropdown: FC<Props> = ({ collections, defaultCollectionId }) => {
                       alt={`${collection.name} Collection Image`}
                       className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
                     />
-                    <p className="reservoir-h6 truncate dark:text-white">
+                    <p className="reservoir-h6 font-thin uppercase truncate dark:text-white collectionsdropdown">
                       {collection.name}
                     </p>
                   </a>

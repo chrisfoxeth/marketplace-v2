@@ -248,7 +248,7 @@ const PriceData: FC<Props> = ({ details, collection, isOwner }) => {
               {isOwner && (
                 <ListModal
                   trigger={
-                    <button className="btn-primary-fill w-full dark:ring-primary-900 dark:focus:ring-4">
+                    <button className="btn-primary-fill gap-2 dark:ring-primary-900 dark:focus:ring-4 sweepbutton transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton hover:bg-hunnysyellow">
                       {floorAskPrice?.amount?.decimal
                         ? 'Create New Listing'
                         : 'List for Sale'}
@@ -458,11 +458,8 @@ const Price: FC<{
       <div className="reservoir-h5 font-headings dark:text-white">{title}</div>
       {source}
     </div>
-    <div className="reservoir-h3 font-headings dark:text-white">
+    <div className="reservoir-h3 font-thin font-headings dark:text-white">
       {price}
-      <div className="text-sm text-neutral-600 dark:text-neutral-300">
-        {formatDollar(usdPrice)}
-      </div>
     </div>
   </div>
 )

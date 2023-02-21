@@ -245,8 +245,8 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
           }
         }}
       >
-        <FaBroom className="text-white" />
-        Sweep
+        <FaBroom className="text-hunnyspurple" />
+        SWEEP
       </button>
     )
   }
@@ -260,10 +260,10 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
           isInTheWrongNetwork ||
           sweepTokens?.length === 0
         }
-        className="btn-primary-fill gap-2 dark:ring-primary-900 dark:focus:ring-4"
+        className="btn-primary-fill gap-2 dark:ring-primary-900 dark:focus:ring-4 sweepbutton transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton hover:bg-hunnysyellow"
       >
-        <FaBroom className="text-white" />
-        Sweep
+        <FaBroom className="text-hunnyspurple" />
+        SWEEP
       </Dialog.Trigger>
 
       <Dialog.Portal>
@@ -282,14 +282,14 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                     }`}
                   >
                     <div className="mb-4 flex items-center justify-between">
-                      <Dialog.Title className="reservoir-h4 font-headings dark:text-white">
+                      <Dialog.Title className="reservoir-h4 font-thin font-headings dark:text-white">
                         <div className="flex items-center gap-4">
                           <img
                             src={collection?.image}
                             alt=""
                             className="block h-12 w-12 rounded-full"
                           />
-                          <div className="reservoir-h5 dark:text-white">
+                          <div className="reservoir-h5 font-thin dark:text-white">
                             {collection?.name}
                           </div>
                         </div>
@@ -393,9 +393,9 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
 
                         await execute(signer)
                       }}
-                      className="btn-primary-fill w-full dark:ring-primary-900 dark:focus:ring-4 md:mx-auto md:w-[248px]"
+                      className="btn-primary-fill sweepbutton w-full dark:ring-primary-900 dark:focus:ring-4 md:mx-auto md:w-[248px] transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton hover:bg-hunnysyellow"
                     >
-                      Buy Now
+                      BUY
                     </button>
                   </div>
                   {!DISABLE_POWERED_BY_RESERVOIR && (

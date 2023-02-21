@@ -62,6 +62,13 @@ const primaryColors = {
     700: '#6215E3',
     900: '#6215E3',
   },
+  hunnysdarkpurple: {
+    100: '#6215E3',
+    300: '#6215E3',
+    500: '#6215E3',
+    700: '#3F07B4',
+    900: '#5A1CDA',
+  },
   hunnysyellow: {
     100: '#fcca00',
     300: '#fcca00',
