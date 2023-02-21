@@ -95,7 +95,7 @@ model-viewer {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 641px) {
   .tagline {
     font-size: 32px !important;
   }
