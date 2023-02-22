@@ -50,6 +50,11 @@ model-viewer {
   font-size: 16px;
 }
 
+.luckiestguy {
+  font-family: "LuckiestGuy";
+  font-weight: 100;
+}
+
 .sweepbutton {
   font-family: "LuckiestGuy";
   font-weight: 100;
