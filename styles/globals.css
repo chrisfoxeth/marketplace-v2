@@ -57,6 +57,12 @@ model-viewer {
   padding-top:10px;
 }
 
+.connectwallet {
+  font-family: "LuckiestGuy";
+  font-weight: 100;
+  font-size: 20px;
+}
+
 .btn-primary-fill {
   color: #3F07B4;
 }
@@ -137,6 +143,7 @@ model-viewer {
     font-size: 18px;
     padding:.5rem;
   }
+
 }
 
 @media screen and (max-width: 641px) {

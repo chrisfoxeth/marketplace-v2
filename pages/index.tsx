@@ -108,7 +108,7 @@ const Home: NextPage<Props> = ({ fallback }) => {
           <div className="px-6 py-4">
           <h1 className="text-center text-4xl mb-2">HUNNYS</h1>
           <p className="text-white text-base">
-          Unleash your creativity with Hunnys - the revolutionary digital doll on the Ethereum blockchain. <br></br><br></br><br></br>Collect unique items, customize with over 1 million combinations, & explore The Bunny Kingdom🐰💎.
+          Unleash your creativity with Hunnys - 10,000 unique, colorful NFTs on Ethereum.<br></br><br></br>Witness the revolutionary color harmony system for yourself that makes each and every Hunny so visually satisfying, and fun to collect. The best place to start to explore The Bunny Kingdom🐰💎.
           </p>
           </div>
           <div className="flex p-14 vc-button">
@@ -121,27 +121,28 @@ const Home: NextPage<Props> = ({ fallback }) => {
           Ownership benefits include:
           </p>
           <ul className="max-w-md p-6 space-y-1 text-gray-500 list-inside dark:text-gray-400">
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Access to Hupe Scouts</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Exclusive Merchandise</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Creative Licensing</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Monthly Rewards</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">And more!</p>
-    </li>
-</ul>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Monthly Art Airdrops</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Access to minting in the Hupe Scouts collection</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Exclusive Merchandise</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Creative Licensing</p>
+            </li>
+
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">And more!</p>
+            </li>
+          </ul>
           </div>
           </div>
           <div className="reservoir-h4 dark:text-white m-auto">
@@ -167,27 +168,27 @@ const Home: NextPage<Props> = ({ fallback }) => {
           Ownership benefits include:
           </p>
           <ul className="max-w-md p-6 space-y-1 text-gray-500 list-inside dark:text-gray-400">
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Access to Hupe Scouts</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Exclusive monthly rewards</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Creative Licensing</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Special Discord Access</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">And more!</p>
-    </li>
-</ul>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Monthly Art Airdrops</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Access to minting in the Hupe Scouts collection</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Special Discord Access</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Creative Licensing</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">And more!</p>
+            </li>
+          </ul>
           </div>
           </div>
           <div className="reservoir-h4 dark:text-white m-auto">
@@ -200,7 +201,7 @@ const Home: NextPage<Props> = ({ fallback }) => {
           <div className="px-6 py-4">
           <h1 className="text-center text-4xl mb-2">HUPE SCOUTS</h1>
           <p className="text-white text-base">
-          The Official Hunnys Community-Owned Derivative Brand. This is not a collection run by the Hunnys team.<br></br><br></br>It is run, governed, and maintained by members of the Hunnys community. View the Hunnys Hupe Scouts website for more information.
+          The Official Hunnys Community-Owned Derivative Brand.<br></br><br></br><br></br>This collection is grown, governed, & maintained by members of the Hunnys community. Plus, all creators receive an exclusive Haley the Hupe Scout NFT.
           </p>
           </div>
           <div className="flex p-14 vc-button">
@@ -210,30 +211,30 @@ const Home: NextPage<Props> = ({ fallback }) => {
           </Link>
           </div>
           <p className="text-white text-base px-6 py-4">
-          Ownership benefits include:
+          Creator benefits include:
           </p>
           <ul className="max-w-md p-6 space-y-1 text-gray-500 list-inside dark:text-gray-400">
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Commissions of Hunnys derivatives</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Use the Hupe Scouts brand</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Access to our network of other artists</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">Regular airdrop rewards</p>
-    </li>
-    <li className="flex items-center">
-        <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-        <p className="text-white text-base">And more!</p>
-    </li>
-</ul>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Sell commissions of Hunnys derivatives</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Special Hupe Scout Discord role</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">An exclusive Hunnys Seasons NFT</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">Grow the brand together with the Hupe Scouts Community</p>
+            </li>
+            <li className="flex items-center">
+                <svg className="w-4 h-4 mr-1.5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
+                <p className="text-white text-base">And more!</p>
+            </li>
+        </ul>
           </div>
           </div>
         </div>
