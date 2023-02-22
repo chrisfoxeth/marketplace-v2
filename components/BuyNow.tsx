@@ -59,7 +59,7 @@ const BuyNow: FC<Props> = ({
 
   return !canBuy ? (
     <button
-      className={buttonClassName}
+      className="transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton text-hunnysdarkpurple hover:bg-hunnysyellow font-bold w-full buybutton"
       disabled={isInTheWrongNetwork && !switchNetworkAsync}
       onClick={async () => {
         if (isInTheWrongNetwork && switchNetworkAsync && CHAIN_ID) {
