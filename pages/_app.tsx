@@ -132,7 +132,7 @@ const App: FC<AppProps & { baseUrl: string }> = ({
         darkTheme({
           headlineFont: FONT_FAMILY,
           font: BODY_FONT_FAMILY,
-          primaryColor: primaryColorPalette['700'],
+          primaryColor: primaryColorPalette['500'],
           primaryHoverColor: primaryColorPalette['900'],
         })
       )
