@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url('/fonts/luckiestguy/LuckiestGuy.ttf');
-
+@import url('/public/headerBGI.png');
 
 h1, h2, h3, h4, h5, h6, reservoir-h1, reservoir-h2, reservoir-h3, reservoir-h4, reservoir-h5, reservoir-h6 font-thin, .vc-button {
   font-family: "LuckiestGuy";
@@ -22,6 +22,8 @@ model-viewer {
 
 .navHeader {
   background-color: #3F07B4;
+  background-image: url("/public/headerBGI.png");
+  position: relative;
 }
 
 .masonry-grid {

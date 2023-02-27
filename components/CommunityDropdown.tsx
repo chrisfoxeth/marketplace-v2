@@ -2,15 +2,17 @@ import { FC, useState } from 'react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { paths } from '@reservoir0x/reservoir-sdk'
 import { FiChevronDown } from 'react-icons/fi'
+import hunnysSeasons from '/public/hunnysSeasonsCollection.png'
 import Link from 'next/link'
 
 type Props = {
-  collections: paths['/search/collections/v1']['get']['responses']['200']['schema']['collections']
+  slug: paths['/search/collections/v1']['get']['responses']['200']['schema']['collections']['slug']
   defaultCollectionId?: string
 }
 
 const CommunityDropdown: FC<Props> = ({ collections, defaultCollectionId }) => {
   const [open, setOpen] = useState(false)
+  const hunnysSeasons = '/hunnysSeasonsCollection.png'
 
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
@@ -49,29 +51,55 @@ const CommunityDropdown: FC<Props> = ({ collections, defaultCollectionId }) => {
                 key={collection.collectionId}
                 className="reservoir-gray-dropdown-item overflow-hidden rounded-none border-b p-0 outline-none first:rounded-t-2xl last:rounded-b-2xl last:border-b-0 dark:border-[#525252] dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
               >
-                <Link
-                  href={`/collections/${collection.collectionId}`}
-                  legacyBehavior={true}
+              <Link
+                href={`/collections/${collection.collectionId}`}
+                legacyBehavior={true}
+              >
+                <a
+                  onClick={() => {
+                    setOpen(false)
+                  }}
+                  className={`flex min-w-full items-center gap-2 rounded-none px-6 py-4 hover:bg-neutral-800 focus:bg-neutral-800`}
                 >
-                  <a
-                    onClick={() => {
-                      setOpen(false)
-                    }}
-                    className={`flex max-w-full items-center gap-2 rounded-none px-6 py-4 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800`}
-                  >
-                    <img
-                      src={collection.image}
-                      alt={`${collection.name} Collection Image`}
-                      className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
-                    />
-                    <p className="reservoir-h6 font-thin uppercase truncate dark:text-white collectionsdropdown">
-                      {collection.name}
-                    </p>
-                  </a>
-                </Link>
+                  <img
+                    src={collection.image}
+                    alt={`${collection.name} Collection Image`}
+                    className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
+                  />
+                  <p className="reservoir-h6 font-thin uppercase truncate dark:text-white collectionsdropdown">
+                    {collection.name}
+                  </p>
+                </a>
+              </Link>
               </DropdownMenu.Item>
             )
           })}
+          <DropdownMenu.Item
+            className="reservoir-gray-dropdown-item overflow-hidden rounded-none border-b p-0 outline-none first:rounded-t-2xl last:rounded-b-2xl last:border-b-0 dark:border-[#525252] dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+          >
+          <Link
+            href={`https://opensea.io/collection/hunnys-seasons`}
+            legacyBehavior={true}
+          >
+            <a
+              onClick={() => {
+                setOpen(false)
+              }}
+              target="_blank"
+              rel="noreferrer"
+              className={`flex min-w-full items-center gap-2 rounded-none px-6 py-4 hover:bg-neutral-800 focus:bg-neutral-800`}
+            >
+              <img
+                src={hunnysSeasons}
+                alt={`Hunnys Seasons Collection Image`}
+                className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
+              />
+              <p className="reservoir-h6 font-thin uppercase truncate dark:text-white collectionsdropdown">
+                Hunnys Seasons
+              </p>
+            </a>
+          </Link>
+        </DropdownMenu.Item>
       </DropdownMenu.Content>
     </DropdownMenu.Root>
   )

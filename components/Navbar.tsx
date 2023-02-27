@@ -10,6 +10,7 @@ import CartMenu from './CartMenu'
 import SearchMenu from './SearchMenu'
 import { useMediaQuery } from '@react-hookz/web'
 import useMounted from 'hooks/useMounted'
+import headerBGI from '/public/headerBGI.png'
 
 const SearchCollections = dynamic(() => import('./SearchCollections'))
 const CommunityDropdown = dynamic(() => import('./CommunityDropdown'))
@@ -40,6 +41,7 @@ const Navbar: FC = () => {
   const [filterComponent, setFilterComponent] = useState<ReactElement | null>(
     null
   )
+  const headerBGI = '/headerBGI.png'
   const isMobile = useMediaQuery('(max-width: 770px)')
   const showDesktopSearch = useMediaQuery('(min-width: 1200px)')
   const [hasCommunityDropdown, setHasCommunityDropdown] =
@@ -121,10 +123,10 @@ const Navbar: FC = () => {
   }
 
   return (
-    <nav className="sticky top-0 z-[1000] col-span-full flex items-center justify-between gap-2 border-b border-[#D4D4D4] bg-hunnyslightpurple px-6 py-4 dark:border-neutral-600 dark:bg-hunnysdarkpurple md:gap-3 md:py-6 md:px-16">
+    <nav className="sticky top-0 z-[1000] col-span-full flex items-center justify-between gap-2 border-b border-[#D4D4D4]  px-6 py-4 dark:border-none bg-gradient-to-r from-primary-500 to-primary-900 md:gap-3 md:py-6 md:px-16">
       <NavbarLogo className="z-10 max-w-[300px]" />
       {showLinks && (
-        <div className="z-10 ml-12 mr-12 hidden items-center gap-11 md:flex">
+        <div className="z-10  ml-12 mr-12 hidden items-center gap-11 md:flex">
           {externalLinks.map(({ name, url }) => (
             <a
               key={url}

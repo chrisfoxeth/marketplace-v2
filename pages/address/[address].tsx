@@ -6,6 +6,7 @@ import {
   NextPage,
 } from 'next'
 import { useRouter } from 'next/router'
+import Image from 'next/legacy/image'
 import {
   useAccount,
   useNetwork,
@@ -19,7 +20,7 @@ import UserOffersTable from 'components/tables/UserOffersTable'
 import UserListingsTable from 'components/tables/UserListingsTable'
 import UserTokensGrid from 'components/UserTokensGrid'
 import Avatar from 'components/Avatar'
-import { ComponentProps } from 'react'
+import { ComponentProps, useRef } from 'react'
 import Toast from 'components/Toast'
 import toast from 'react-hot-toast'
 import Head from 'next/head'
@@ -28,6 +29,7 @@ import { truncateAddress } from 'lib/truncateText'
 import { paths, setParams } from '@reservoir0x/reservoir-sdk'
 import UserActivityTab from 'components/tables/UserActivityTab'
 import useMounted from 'hooks/useMounted'
+import clippy from './public/clickClipboard.svg'
 
 const CHAIN_ID = process.env.NEXT_PUBLIC_CHAIN_ID
 const COLLECTION = process.env.NEXT_PUBLIC_COLLECTION
@@ -46,6 +48,7 @@ const Address: NextPage<Props> = ({ address, fallback }) => {
   const isMounted = useMounted()
   const router = useRouter()
   const accountData = useAccount()
+  const nameRef = useRef<HTMLParagraphElement>(null);
 
   if (!address) {
     throw 'No address set'
@@ -95,6 +98,7 @@ const Address: NextPage<Props> = ({ address, fallback }) => {
   const isInTheWrongNetwork = activeChain?.id !== +CHAIN_ID
   const isOwner = address?.toLowerCase() === accountData?.address?.toLowerCase()
   const formattedAddress = truncateAddress(address as string)
+  const clippy = '/clickClipboard.svg'
 
   let tabs = [
     { name: 'Tokens', id: 'portfolio' },
@@ -112,6 +116,15 @@ const Address: NextPage<Props> = ({ address, fallback }) => {
 
   tabs.push({ name: 'Activity', id: 'activity' })
 
+  const handleNameClick = () => {
+  if (address) {
+    navigator.clipboard.writeText(address);
+    toast.success('Address copied to clipboard');
+  }
+};
+
+
+
   return (
     <Layout navbar={{}}>
       <Head>{metadata.title(`${address} Profile`)}</Head>
@@ -122,11 +135,17 @@ const Address: NextPage<Props> = ({ address, fallback }) => {
               <Avatar address={address} avatar={ensAvatar} size={80} />
             )}
             <div className="ml-4 flex flex-col justify-center">
-              <p className="reservoir-h6 font-thin font-thin text-xl font-semibold dark:text-white">
-                {ensName || formattedAddress}
+              <p
+              onClick={handleNameClick}
+              className="cursor-pointer font-thin text-xl font-semibold uppercase text-white transititext-primary text-primary transition ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-500 text-primary-400 hover:text-hunnysviolet focus:text-primary-500 active:text-primary-600"
+              data-te-toggle="tooltip"
+              data-te-placement="top"
+              title="Click To Copy"
+              >
+              {ensName || formattedAddress}
               </p>
               {ensName && (
-                <p className="reservoir-label text-md font-semibold opacity-60">
+                <p onClick={handleNameClick} className="reservoir-label cursor-pointer text-md font-semibold opacity-60">
                   {formattedAddress}
                 </p>
               )}

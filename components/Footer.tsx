@@ -23,6 +23,11 @@ const Footer = () => {
               Merch
             </a>
           </Link>
+          <Link href="https://hunnys.io/bunnyu/launch-your-own-nft-marketplace/" legacyBehavior={true}>
+          <a className=" min-w-max" target="_blank" rel="noreferrer">
+          Create Your Own Marketplace
+          </a>
+          </Link>
         </div>
         <div className="flex flex-row items-center gap-x-6">
           <Link href="https://twitter.com/HunnysNFT" legacyBehavior={true}>
