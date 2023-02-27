@@ -6,7 +6,7 @@ import hunnysSeasons from '/public/hunnysSeasonsCollection.png'
 import Link from 'next/link'
 
 type Props = {
-  slug: paths['/search/collections/v1']['get']['responses']['200']['schema']['collections']['slug']
+  collections: paths['/search/collections/v1']['get']['responses']['200']['schema']['collections']
   defaultCollectionId?: string
 }
 
