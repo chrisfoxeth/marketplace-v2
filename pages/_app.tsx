@@ -18,6 +18,7 @@ import 'styles/roobert.css'
 import 'styles/rodger.css'
 import 'styles/ingrammono.css'
 import type { AppContext, AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react'
 import { default as NextApp } from 'next/app'
 import { WagmiConfig, createClient, configureChains } from 'wagmi'
 import * as allChains from 'wagmi/chains'
@@ -191,6 +192,7 @@ const App: FC<AppProps & { baseUrl: string }> = ({
             <AnalyticsProvider>
               <Component {...pageProps} />
             </AnalyticsProvider>
+            <Analytics />
           </RainbowKitProvider>
         </WagmiConfig>
       </RecoilRoot>
