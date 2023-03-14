@@ -250,7 +250,7 @@ const PriceData: FC<Props> = ({ details, collection, isOwner }) => {
                   trigger={
                     <button className="btn-primary-fill gap-2 dark:ring-primary-900 dark:focus:ring-4 sweepbutton transition duration-500 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton hover:bg-hunnysyellow">
                       {floorAskPrice?.amount?.decimal
-                        ? 'Create New Listing'
+                        ? 'List for Sale'
                         : 'List for Sale'}
                     </button>
                   }

@@ -43,7 +43,7 @@ const SwapCartModal: FC<Props> = ({ open, setOpen, cart }) => {
                         setCartTokens(cart || [])
                         setOpen(false)
                       }}
-                      className="btn-primary-fill w-full dark:border-neutral-600  dark:text-white dark:ring-primary-900 dark:focus:ring-4"
+                      className="bg-hunnysdarkpurple w-full dark:border-neutral-600  dark:text-white dark:ring-primary-900 dark:focus:ring-4"
                     >
                       Yes
                     </Dialog.Close>

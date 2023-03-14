@@ -217,7 +217,7 @@ const Hero: FC<Props> = ({ fallback, collectionId }) => {
                 trigger={
                   <button
                     disabled={isInTheWrongNetwork}
-                    className="transition duration-500 p-4 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton text-hunnysdarkpurple hover:bg-hunnysyellow font-bold sweepbutton rounded min-w-[222px]"
+                    className="transition hidden duration-500 p-4 ease-in-out border border-hunnysyellow transform hover:-translate-y-1 hover:scale-110 bg-hunnysbutton text-hunnysdarkpurple hover:bg-hunnysyellow font-bold sweepbutton rounded min-w-[222px]"
                   >
                     {isAttributeModal
                       ? 'Make an Attribute Offer'
